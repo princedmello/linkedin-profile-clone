@@ -1,0 +1,146 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.widget {
+    padding: 12px;
+}
+
+.group {
+    padding: 8px 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--linkedin-black);
+}
+
+.editBtn {
+    color: var(--linkedin-gray);
+    padding: 4px;
+}
+
+.value {
+    font-size: 14px;
+    color: var(--linkedin-gray);
+    margin-top: 4px;
+}
+
+.divider {
+    height: 1px;
+    background-color: var(--linkedin-light-gray);
+    margin: 4px 0;
+}
+
+.adWidget {
+    text-align: center;
+}
+
+.adText {
+    font-size: 12px;
+    text-align: right;
+    color: var(--linkedin-black);
+}
+
+.adContent {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 12px 0;
+}
+
+.adAvatar,
+.adLogo {
+    width: 60px;
+    height: 60px;
+}
+
+.adAvatar {
+    border-radius: 50%;
+}
+
+.adMsg {
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.widgetTitle {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--linkedin-black);
+}
+
+.person {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.personAvatar {
+    width: 48px;
+    height: 48px;
+    background-color: #666;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.personInfo {
+    flex: 1;
+}
+
+.personName {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--linkedin-black);
+}
+
+.personTitle {
+    font-size: 12px;
+    color: var(--linkedin-gray);
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.connectBtn {
+    border-radius: 16px;
+    border: 1px solid var(--linkedin-gray);
+    padding: 4px 12px;
+    font-weight: 600;
+    color: var(--linkedin-gray);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: background 0.2s;
+}
+
+.connectBtn:hover {
+    background-color: var(--linkedin-hover);
+    border-color: var(--linkedin-black);
+    color: var(--linkedin-black);
+}
+
+.showMore {
+    font-weight: 600;
+    color: var(--linkedin-gray);
+    text-align: center;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.showMore:hover {
+    background-color: var(--linkedin-hover);
+}

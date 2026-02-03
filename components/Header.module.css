@@ -1,0 +1,117 @@
+.header {
+    background-color: var(--linkedin-white);
+    border-bottom: 1px solid var(--linkedin-light-gray);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    height: 52px;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logoIcon {
+    color: var(--linkedin-blue);
+}
+
+.search {
+    background-color: var(--linkedin-white);
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    height: 34px;
+    border-radius: 20px;
+    width: 280px;
+    border: 1px solid var(--linkedin-light-gray);
+    transition: width 0.2s, border-color 0.2s, box-shadow 0.2s;
+    /* Adding transition for interaction feel */
+}
+
+.searchIcon {
+    color: var(--linkedin-black);
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.search input {
+    border: none;
+    background: none;
+    font-size: 14px;
+    width: 100%;
+    color: var(--linkedin-black);
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.nav {
+    display: flex;
+    height: 100%;
+}
+
+.navItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px;
+    color: var(--linkedin-gray);
+    font-size: 12px;
+    height: 100%;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s;
+}
+
+.navItem:hover {
+    color: var(--linkedin-black);
+}
+
+.navItem.active {
+    color: var(--linkedin-black);
+    border-bottom-color: var(--linkedin-black);
+}
+
+.navText {
+    margin-top: 2px;
+}
+
+.iconContainer {
+    height: 24px;
+    width: 24px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider {
+    width: 1px;
+    height: 100%;
+    background-color: var(--linkedin-light-gray);
+    margin: 0 16px;
+}
+
+.avatarPlaceholder {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #ddd;
+    overflow: hidden;
+}
+
+.premiumText {
+    display: none;
+}

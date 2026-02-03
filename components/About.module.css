@@ -1,0 +1,66 @@
+.text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--linkedin-black);
+    white-space: pre-line;
+    margin-bottom: 16px;
+}
+
+.seeMoreBtn {
+    border: none;
+    background: none;
+    color: var(--linkedin-gray);
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 4px;
+}
+
+.seeMoreBtn:hover {
+    color: var(--linkedin-blue);
+    text-decoration: underline;
+}
+
+.topSkills {
+    border: 1px solid var(--linkedin-light-gray);
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.topSkills:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.topSkillsContent {
+    flex: 1;
+}
+
+.topSkillsTitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--linkedin-black);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+
+.topSkillsList {
+    font-size: 14px;
+    color: var(--linkedin-gray);
+    margin: 0;
+}
+
+.diamondIcon {
+    color: var(--linkedin-gray);
+}
+
+.arrowIcon {
+    color: var(--linkedin-gray);
+}

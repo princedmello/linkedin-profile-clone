@@ -1,0 +1,86 @@
+:root {
+  --linkedin-bg: #f3f2ef;
+  --linkedin-white: #ffffff;
+  --linkedin-blue: #0a66c2;
+  --linkedin-black: #191919;
+  --linkedin-gray: #666666;
+  --linkedin-light-gray: #e0dfdc;
+  --linkedin-hover: #f3f2ef;
+  --border-radius: 8px;
+  --card-shadow: 0 0 0 1px rgba(0,0,0,0.08), 0 2px 2px rgba(0,0,0,0.04);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--linkedin-bg);
+  color: var(--linkedin-black);
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+.container {
+  max-width: 1128px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Utilities */
+.card {
+  background-color: var(--linkedin-white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.btn-primary {
+  background-color: var(--linkedin-blue);
+  color: white;
+  padding: 6px 16px;
+  border-radius: 16px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #004182;
+}
+
+.btn-outline {
+  border: 1px solid var(--linkedin-blue);
+  color: var(--linkedin-blue);
+  padding: 5px 15px;
+  border-radius: 16px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.btn-outline:hover {
+  background-color: rgba(112, 181, 249, 0.15);
+  box-shadow: inset 0 0 0 1px var(--linkedin-blue);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}

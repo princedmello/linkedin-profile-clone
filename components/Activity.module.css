@@ -1,0 +1,224 @@
+/* Activity.module.css */
+.followers {
+    color: var(--linkedin-gray);
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.filters {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+.filterBtn {
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: 1px solid var(--linkedin-gray);
+    color: var(--linkedin-black);
+    font-weight: 600;
+    font-size: 14px;
+    background: transparent;
+    transition: all 0.2s;
+}
+
+.filterBtn:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+    border-width: 1px;
+    /* Ensure border stays consistent */
+    border-color: rgba(0, 0, 0, 0.9);
+}
+
+.filterBtn.active {
+    background-color: #01754f;
+    color: white;
+    border-color: #01754f;
+    border-width: 1px;
+}
+
+.carouselContainer {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 12px;
+    padding-bottom: 16px;
+    margin-right: -24px;
+    padding-right: 24px;
+}
+
+.carouselContainer::-webkit-scrollbar {
+    height: 6px;
+}
+
+.carouselContainer::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 3px;
+}
+
+.card {
+    min-width: 300px;
+    max-width: 350px;
+    /* Slightly wider */
+    border: 1px solid var(--linkedin-light-gray);
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: start;
+    background-color: white;
+}
+
+.cardHeader {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 8px;
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 8px;
+    object-fit: cover;
+}
+
+.headerContent {
+    flex: 1;
+}
+
+.authorName {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--linkedin-black);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.authorHeadline {
+    font-size: 12px;
+    color: var(--linkedin-gray);
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-top: 2px;
+}
+
+.postTime {
+    font-size: 12px;
+    color: var(--linkedin-gray);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 2px;
+}
+
+.menuBtn {
+    color: var(--linkedin-gray);
+    padding: 4px;
+    border-radius: 50%;
+    background: transparent;
+    border: none;
+}
+
+.menuBtn:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.postContent {
+    font-size: 14px;
+    color: var(--linkedin-black);
+    line-height: 1.5;
+    margin-bottom: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: pre-line;
+}
+
+.cardFooter {
+    margin-top: auto;
+    border-top: 1px solid var(--linkedin-light-gray);
+    padding-top: 4px;
+    /* Reduced padding top */
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: var(--linkedin-gray);
+    margin-bottom: 8px;
+    padding-top: 8px;
+    /* Move padding here */
+}
+
+.likeIcon {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    /* Space out buttons */
+    align-items: center;
+    padding-top: 4px;
+}
+
+.actionBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    /* Wider hit area */
+    border-radius: 4px;
+    color: var(--linkedin-gray);
+    /* Default gray */
+    background: transparent;
+    border: none;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.actionBtn:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.actionBtn svg {
+    width: 20px;
+    /* Standard icon size */
+    height: 20px;
+    fill: currentColor;
+}
+
+/* Specific highlight for valid button states if needed, but keeping simple gray for now per usual standard */
+
+.footer {
+    border-top: 1px solid var(--linkedin-light-gray);
+    margin: 0px -24px -12px;
+    padding: 12px 24px;
+    text-align: center;
+}
+
+.showAll {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-weight: 600;
+    color: var(--linkedin-gray);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.showAll:hover {
+    background-color: var(--linkedin-hover);
+    color: var(--linkedin-black);
+    text-decoration: none;
+}

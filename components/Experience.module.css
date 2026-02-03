@@ -1,0 +1,104 @@
+.addBtn {
+    color: var(--linkedin-gray);
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.addBtn:hover {
+    background-color: var(--linkedin-hover);
+    color: var(--linkedin-black);
+}
+
+.item {
+    display: flex;
+    gap: 12px;
+    padding-bottom: 24px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid var(--linkedin-light-gray);
+}
+
+.item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0px;
+}
+
+.logoWrapper {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.content {
+    flex: 1;
+}
+
+.roleTitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--linkedin-black);
+}
+
+.companyName {
+    font-size: 14px;
+    color: var(--linkedin-black);
+}
+
+.dateLocation {
+    font-size: 14px;
+    color: var(--linkedin-gray);
+    margin-bottom: 8px;
+}
+
+.description {
+    font-size: 14px;
+    color: var(--linkedin-black);
+    margin-bottom: 12px;
+    line-height: 1.5;
+    white-space: pre-line;
+    position: relative;
+}
+
+.truncated {
+    max-height: 42px;
+    /* 1.5 line-height * 14px * 2 lines = 42px */
+    overflow: hidden;
+}
+
+.seeMoreBtn {
+    border: none;
+    background: white;
+    /* Match background to cover text */
+    color: var(--linkedin-gray);
+    font-weight: 400;
+    cursor: pointer;
+    padding: 0 0 0 4px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.seeMoreBtn:hover {
+    color: var(--linkedin-blue);
+    text-decoration: underline;
+}
+
+.skillsWrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--linkedin-black);
+}
+
+.diamondIcon {
+    margin-right: 8px;
+    color: var(--linkedin-black);
+}
