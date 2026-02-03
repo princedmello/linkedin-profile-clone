@@ -14,7 +14,7 @@ export default function ProfileHero() {
 
             <div className={styles.content}>
                 <div className={styles.avatarWrapper}>
-                    <img src="/assets/profile pic.jpg" alt="Profile" className={styles.avatar} />
+                    <img src="/assets/profilepic.jpg" alt="Profile" className={styles.avatar} />
                 </div>
 
                 <div className={styles.actions}>

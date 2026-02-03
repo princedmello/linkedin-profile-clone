@@ -25,7 +25,7 @@ export default function Sidebar() {
             <div className={`card ${styles.widget} ${styles.adWidget}`}>
                 <p className={styles.adText}>Ad</p>
                 <div className={styles.adContent}>
-                    <img src="/assets/profile pic.jpg" className={styles.adAvatar} alt="Ad Avatar" />
+                    <img src="/assets/profilepic.jpg" className={styles.adAvatar} alt="Ad Avatar" />
                     <img src="/assets/media stream ai_logo.jpg" className={styles.adLogo} alt="Company Logo" />
                 </div>
                 <p className={styles.adMsg}>Prince, explore relevant opportunities with Media Stream AI</p>

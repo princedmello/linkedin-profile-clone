@@ -18,10 +18,10 @@ export default function Home() {
     <div className={styles.page}>
       <WelcomePopup />
       <Header />
-      <div className="container" style={{ marginTop: "65px", display: "flex", gap: "24px", paddingTop: "12px" }}>
+      <div className={styles.container}>
 
         {/* Main Content Column */}
-        <main style={{ flex: "1 1 0", minWidth: 0 }}>
+        <main className={styles.mainColumn}>
           <ProfileHero />
           <About />
           <Featured />
@@ -35,7 +35,7 @@ export default function Home() {
         </main>
 
         {/* Right Sidebar Column */}
-        <aside style={{ width: "300px", flexShrink: 0 }}>
+        <aside className={styles.sidebarColumn}>
           <Sidebar />
         </aside>
 

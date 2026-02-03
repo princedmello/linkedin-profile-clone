@@ -9,6 +9,13 @@
     height: 52px;
 }
 
+@media (max-width: 768px) {
+    .header {
+        height: 52px;
+        /* Keep consistent or smaller */
+    }
+}
+
 .container {
     height: 100%;
     display: flex;
@@ -86,6 +93,8 @@
 
 .navText {
     margin-top: 2px;
+    display: flex;
+    align-items: center;
 }
 
 .iconContainer {
@@ -114,4 +123,54 @@
 
 .premiumText {
     display: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .search {
+        width: 32px;
+        height: 32px;
+        padding: 0;
+        justify-content: center;
+        background-color: transparent;
+        border: none;
+    }
+
+    .search input {
+        display: none;
+    }
+
+    .searchIcon {
+        margin: 0;
+        width: 24px;
+        height: 24px;
+        color: var(--linkedin-gray);
+    }
+
+    .desktopOnly {
+        display: none !important;
+    }
+
+    .nav {
+        gap: 0;
+        justify-content: space-evenly;
+        flex: 1;
+        margin-left: 12px;
+    }
+
+    .navItem {
+        min-width: auto;
+        padding: 0 4px;
+    }
+
+    .navText {
+        display: none;
+    }
+
+    .divider {
+        display: none;
+    }
 }

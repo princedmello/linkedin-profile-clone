@@ -2,3 +2,45 @@
   min-height: 100vh;
   padding-bottom: 40px;
 }
+
+.container {
+  margin-top: 65px;
+  display: flex;
+  gap: 24px;
+  padding-top: 12px;
+  max-width: 1128px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.mainColumn {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.sidebarColumn {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    margin-top: 56px;
+    /* Smaller header on mobile */
+    padding: 0;
+    /* Full width */
+    gap: 0;
+  }
+
+  .mainColumn {
+    width: 100%;
+  }
+
+  .sidebarColumn {
+    width: 100%;
+    padding: 0 16px;
+  }
+}

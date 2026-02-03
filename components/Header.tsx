@@ -31,17 +31,17 @@ export default function Header() {
                     <NavItem icon="notifications" text="Notifications" />
                     <NavItem icon="me" text="Me" avatar dropdown />
                     <div className={styles.divider}></div>
-                    <NavItem icon="grid" text="For Business" dropdown />
-                    <NavItem icon="advertise" text="Advertise" />
+                    <NavItem icon="grid" text="For Business" dropdown className={styles.desktopOnly} />
+                    <NavItem icon="advertise" text="Advertise" className={styles.desktopOnly} />
                 </nav>
             </div>
         </header>
     );
 }
 
-function NavItem({ icon, text, active, avatar, dropdown, badge }: { icon: string; text: string; active?: boolean; avatar?: boolean; dropdown?: boolean; badge?: boolean }) {
+function NavItem({ icon, text, active, avatar, dropdown, badge, className }: { icon: string; text: string; active?: boolean; avatar?: boolean; dropdown?: boolean; badge?: boolean; className?: string }) {
     return (
-        <a href="#" className={`${styles.navItem} ${active ? styles.active : ''}`}>
+        <a href="#" className={`${styles.navItem} ${active ? styles.active : ''} ${className || ''}`}>
             <div className={styles.iconContainer}>
                 {badge && <div className={styles.badge} style={{ position: 'absolute', top: '-5px', right: '-5px', width: '8px', height: '8px', backgroundColor: '#cc1016', borderRadius: '50%', border: '2px solid #fff' }}></div>}
                 {/* Simple placeholder icons for now, mapped by string */}
@@ -50,11 +50,11 @@ function NavItem({ icon, text, active, avatar, dropdown, badge }: { icon: string
                 {icon === 'jobs' && <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M17 6V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2v4a3 3 0 003 3h14a3 3 0 003-3V6zM9 5a1 1 0 011-1h4a1 1 0 011 1v1H9zm10 9a4 4 0 003-1.38V17a3 3 0 01-3 3H5a3 3 0 01-3-3v-4.38A4 4 0 005 14z"></path></svg>}
                 {icon === 'messaging' && <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M16 4H8a7 7 0 000 14h4v4l8.16-8.16A6 6 0 0016 4z"></path></svg>}
                 {icon === 'notifications' && <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M22 19h-8.28a2 2 0 11-3.44 0H2L3.6 17.38A2 2 0 004 16.12V10a8 8 0 0116 0v6.12a2 2 0 00.4 1.25z"></path></svg>}
-                {icon === 'me' && <div className={styles.avatarPlaceholder}><img src="/assets/small profile pic.jpg" alt="Me" style={{ width: '100%', borderRadius: '50%' }} /></div>}
+                {icon === 'me' && <div className={styles.avatarPlaceholder}><img src="/assets/smallprofilepic.jpg" alt="Me" style={{ width: '100%', borderRadius: '50%' }} /></div>}
                 {icon === 'grid' && <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M3 3h7v7H3zm11 0h7v7h-7zm0 11h7v7h-7zM3 14h7v7H3z"></path></svg>}
                 {icon === 'advertise' && <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm0 18a8 8 0 118-8 8 8 0 01-8 8zM12 6a6 6 0 106 6 6 6 0 00-6-6zm0 10a4 4 0 114-4 4 4 0 01-4 4z"></path></svg>}
             </div>
-            <span className={styles.navText} style={{ display: 'flex', alignItems: 'center' }}>
+            <span className={styles.navText}>
                 {text}
                 {dropdown && (
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" width="16" height="16" style={{ marginLeft: '2px' }}>
