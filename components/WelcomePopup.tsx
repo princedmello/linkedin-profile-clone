@@ -13,7 +13,7 @@ export default function WelcomePopup() {
         if (!hasVisited) {
             const timer = setTimeout(() => {
                 setIsVisible(true);
-            }, 5000); // 5 seconds delay
+            }, 2000); // 2 seconds delay
 
             return () => clearTimeout(timer);
         }

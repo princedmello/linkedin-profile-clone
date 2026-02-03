@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   icons: {
     icon: "https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg",
   },
+  openGraph: {
+    images: ["/assets/banner-1.jpeg"],
+  },
 };
 
 export default function RootLayout({
