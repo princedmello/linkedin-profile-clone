@@ -8,7 +8,8 @@ export default function ProfileHero() {
         <div className={`card ${styles.hero}`}>
             {/* Banner */}
             <div className={styles.banner}>
-                <img src="/assets/banner.jpg" alt="Banner" className={styles.bannerImg} />
+                {/* Profile Banner Image */}
+                <img src="/assets/banner.jpg" alt="Profile Banner" className={styles.bannerImg} />
             </div>
 
             <div className={styles.content}>
@@ -54,8 +55,8 @@ export default function ProfileHero() {
 
                     <div className={styles.mutualConnections}>
                         <div className={styles.mutualAvatars}>
-                            <img src="/assets/Sunder.jpg" alt="Sundar Pichai" className={styles.mutualAvatar1} />
-                            <img src="/assets/Jensen.jpg" alt="Jensen Huang" className={styles.mutualAvatar2} />
+                            <img src="/assets/Sunder.jpg" alt="Sundar Pichai - Mutual Connection" className={styles.mutualAvatar1} />
+                            <img src="/assets/Jensen.jpg" alt="Jensen Huang - Mutual Connection" className={styles.mutualAvatar2} />
                         </div>
                         <span className={styles.mutualText}>
                             <a href="https://www.linkedin.com/in/sundarpichai" className={styles.mutualLink}>Sundar Pichai</a>, <a href="https://www.linkedin.com/in/jenhsunhuang/" className={styles.mutualLink}>Jensen Huang</a>, and <a href="#" className={styles.mutualLink}>489 other mutual connections</a>

@@ -36,11 +36,15 @@ export default function Featured() {
     );
 }
 
-// Helper icons for reactions
+// Helper icons for reactions - Using static LinkedIn assets or inline SVGs
 const LikeIcon = "https://static.licdn.com/aero-v1/sc/h/8ekq8ghq8vck8stsnh9p01bc2";
-const HeartIcon = "https://static.licdn.com/aero-v1/sc/h/cpho5fghnpbn5537j9k9pdmj0"; // Using celebrate/heart generic
-const BulbIcon = "https://static.licdn.com/aero-v1/sc/h/3xzol5x773rxh7f42r5b7a5a8"; // Insightful
+const HeartIcon = "https://static.licdn.com/aero-v1/sc/h/cpho5fghnpbn5537j9k9pdmj0";
+const BulbIcon = "https://static.licdn.com/aero-v1/sc/h/3xzol5x773rxh7f42r5b7a5a8";
 
+/**
+ * FeaturedCard Component
+ * Renders a single featured post/article card.
+ */
 function FeaturedCard({ label, title, image, likes, comments }: any) {
     return (
         <div className={styles.card}>

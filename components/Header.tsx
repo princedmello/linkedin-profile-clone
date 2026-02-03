@@ -2,6 +2,10 @@
 
 import styles from './Header.module.css';
 
+/**
+ * Header Component
+ * Displays the top navigation bar with search and navigation icons.
+ */
 export default function Header() {
     return (
         <header className={styles.header}>
